@@ -81,6 +81,7 @@ section p {
 	}
 }
 
+
 header {
 	position: absolute;
 	width: 100%;
@@ -122,6 +123,7 @@ header nav li {
 		margin-bottom: 15px;
 	}
 }
+
 
 .hero {
 	position: relative;
@@ -217,6 +219,7 @@ header nav li {
 		flex-basis: 100%;
 	}
 }
+
 
 .packages .grid li {
 	padding: 50px;
