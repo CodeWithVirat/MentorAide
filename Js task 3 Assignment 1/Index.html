@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body onclick="changeBackgroundColor()">
+    <h1>Click anywhere on the page to change the background color!</h1>
+
+    <script>
+        function getRandomColor() {
+            // Generate random RGB values
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            // Construct the CSS color string
+            return `rgb(${r},${g},${b})`;
+        }
+
+        function changeBackgroundColor() {
+            // Get a random color
+            const randomColor = getRandomColor();
+            // Set the body background color to the random color
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
