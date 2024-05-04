@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comman Names In India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+        #name-display {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Names Viewer</h1>
+        <div id="name-display"></div>
+        <button id="previous-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script>
+        const names = ["Aarav", "Sanya", "Vikram", "Neha", "Rohan", "Priya", "Amit", "Meera", "Rajiv", "Ananya"];
+        let currentIndex = 0;
+
+        function displayCurrentName() {
+            document.getElementById('name-display').textContent = names[currentIndex];
+        }
+
+        function showNextName() {
+            currentIndex = (currentIndex + 1) % names.length;
+            displayCurrentName();
+        }
+
+        function showPreviousName() {
+            currentIndex = (currentIndex - 1 + names.length) % names.length;
+            displayCurrentName();
+        }
+
+        document.getElementById('next-btn').addEventListener('click', showNextName);
+        document.getElementById('previous-btn').addEventListener('click', showPreviousName);
+
+        displayCurrentName();
+    </script>
+</body>
+</html>
