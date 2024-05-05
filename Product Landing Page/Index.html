@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Online Courses Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <header>
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-button">Search</button>
+                    </div>
+                </header>
+                               
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn Anywhere, Anytime</h1>
+                <p>Unlock your potential with our wide range of online courses. Start learning today!</p>
+                <a href="#courses" class="btn">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Popular Courses</h2>
+            <div class="course-items">
+                <div class="course-item">
+                    <img src="course1.png" alt="Course 1">
+                    <h3>Introduction to Programming</h3>
+                    <p>Learn the basics of programming languages such as Python, Java, and C++.</p>
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+                <div class="course-item">
+                    <img src="course2.jpg" alt="Course 2">
+                    <h3>Data Science Fundamentals</h3>
+                    <p>Explore the fundamentals of data analysis, visualization, and machine learning.</p>
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+                <div class="course-item">
+                    <img src="course3.png" alt="Course 3">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Master HTML, CSS, JavaScript, and popular frameworks like React and Node.js.</p>
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+                <!-- Add more courses here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about dark-theme">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Online Courses</h2>
+                <p>At Online Courses, we believe that education should be accessible to everyone, anywhere. Our platform offers a diverse range of high-quality courses taught by industry experts.</p>
+                <p>Whether you're looking to enhance your skills, pursue a new career path, or simply explore a new hobby, we have the perfect course for you.</p>
+                <a href="#courses" class="btn">Browse Courses</a>
+            </div>
+            <div class="about-image">
+                <img src="about-image.jpg" alt="About Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with real-world experience.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Flexible Learning</h3>
+                    <p>Access courses anytime, anywhere, and on any device.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certification</h3>
+                    <p>Earn certificates upon course completion to showcase your skills.</p>
+                </div>
+                <!-- Add more features here -->
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Self-Paced Learning</h3>
+                    <p>Learn at your own pace with our self-paced courses.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Connect with fellow learners and instructors in our online community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial">
+                <img src="student1.jpg" alt="Student 1">
+                <p>"I've learned so much from the courses offered by Online Courses. Highly recommended!"</p>
+                <h4>Virat Banjara</h4>
+            </div>
+            <div class="testimonial">
+                <img src="student2.jpg" alt="Student 2">
+                <p>"The instructors are knowledgeable and supportive. Great learning experience!"</p>
+                <h4>Yogita Rao</h4>
+            </div>
+            <!-- Add more testimonials here -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Mumbai Main Street, INDIA</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91234567890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@onlinecourses.com</p>
+                </div>
+            </div>
+            <form class="contact-form" name="enrollmentForm" onsubmit="return validateForm()">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="programming">Introduction to Programming</option>
+                    <option value="data-science">Data Science Fundamentals</option>
+                    <option value="web-development">Web Development Bootcamp</option>
+                    <!-- Add more course options here -->
+                </select>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="footer-text">© 2024 Online Courses. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="back-to-top">↑</div>
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
